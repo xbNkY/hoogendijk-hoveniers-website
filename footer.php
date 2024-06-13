@@ -35,9 +35,9 @@
             <div class="num-and-sm">
                 <p class="small-text">06-12345678</p>
                 <div class="sm-logos">
-                    <img src="assets/facebook.svg" alt="fb-logo">
-                    <img class="ig-logo" src="assets/instagram (1).svg" alt="ig-logo">
-                    <img src="assets/mail.svg" alt="mail-logo">
+                    <a href=""><img src="assets/facebook.svg" alt="fb-logo"></a>
+                    <a href=""><img class="ig-logo" src="assets/instagram (1).svg" alt="ig-logo"></a>
+                    <a href=""><img src="assets/mail.svg" alt="mail-logo"></a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
 
                 <div class="form-and-send">
                     <input class="form" type="text" name="email" placeholder="Email:">
-                    <img class="send-icon" src="assets/send.svg" alt="send-icon">
+                    <a href=""><img class="send-icon" src="assets/send.svg" alt="send-icon"></a>
                 </div>
             </div>
         </div>
