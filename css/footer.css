@@ -1,0 +1,68 @@
+.footer {
+  background-color: #435e29;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  justify-content: center;
+  padding-block: 12px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.big-text {
+  font-family: "Merriweather", serif;
+  color: white;
+  font-size: 18px;
+}
+
+.small-text {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.num-and-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sm-logos {
+  width: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.text-and-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.form::placeholder {
+  color: white;
+  opacity: 50%;
+}
+
+.form-and-send {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
