@@ -20,11 +20,11 @@
         <a href="index.php"><img class="logo" src="assets/logo.png" alt="logo"></a>
 
         <div class="header-links">
-            <a class="link" href="">Homepagina</a>
+            <a class="link" href="index.php">Homepagina</a>
             <p class="link">-</p>
-            <a class="link" href="">Dienstenaanbod</a>
+            <a class="link" href="dienstenaanbod.php">Dienstenaanbod</a>
             <p class="link">-</p>
-            <a class="link" href="">Portfolio</a>
+            <a class="link" href="portfolio.php">Portfolio</a>
         </div>
     </div>
 
