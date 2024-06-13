@@ -53,6 +53,7 @@
   border-radius: 10px;
   color: white;
   padding: 5px;
+  filter: drop-shadow(black 0px 1px 5px);
 }
 
 .form::placeholder {
