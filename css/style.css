@@ -1,0 +1,14 @@
+/* Open Sans staat als default font en als het Merriweather moet zijn dan specify ik dat in de class van de tekst die anders moet */
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffdea;
+}
+
+/* even als reminder voor mezelf: */
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Merriweather", serif; */
