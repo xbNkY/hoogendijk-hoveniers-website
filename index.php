@@ -36,9 +36,10 @@
         </div>
     </div>
 
-    <div class="seperator">
+    <div style="display:flex;">
         <img class="seperator-img" src="assets/fotos/bg.jpeg" alt="seperator">
     </div>
+
 
 
     <?php include "footer.php" ?>
