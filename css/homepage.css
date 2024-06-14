@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: row;
   gap: 120px;
-  padding-block: 20px;
+  padding-block: 50px;
   padding-inline: 20px;
   justify-content: center;
 }
@@ -58,4 +58,10 @@
 
 .slide-arrow:hover {
   cursor: pointer;
+}
+
+.seperator-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
