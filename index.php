@@ -56,17 +56,23 @@
         <div class="contact">
             <div class="text-box">
                 <div class="text-and-image">
-                    <div class="contact-text">
-                        <p class="head-text">Heeft u vragen?</p>
-                        <p class="info-text">Vul dit formulier in en wij nemen contact met u op!</p>
+                    <div class="info-name-adres">
+                        <div class="contact-text">
+                            <p class="head-text">Heeft u vragen?</p>
+                            <p class="info-text">Vul dit formulier in en wij nemen contact met u op!</p>
+                        </div>
+
+                        <form class="contact-form">
+                            <input class="contact-input" type="text" name="name" placeholder="Naam:">
+                            <input class="contact-input" type="text" name="adres" placeholder="Adres:">
+                        </form>
                     </div>
 
                     <img class="customer" src="assets/hendrik.jpg" alt="hendrik">
                 </div>
 
                 <form class="contact-form">
-                    <input class="contact-input" type="text" name="name" placeholder="Naam:">
-                    <input class="contact-input" type="text" name="adres" placeholder="Adres:">
+                    <textarea class="contact-input big-input" name="message" placeholder="Bericht:" rows="5"></textarea>
                 </form>
             </div>
         </div>
