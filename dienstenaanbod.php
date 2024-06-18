@@ -41,6 +41,19 @@
                 <p class="info-text-white">Zwemvijvers, is één van mjn grootste passies. En gelukkig, ze winnen aan steeds meer populariteit, waardoor ik er veel ervaring mee heb opgebouwd.</p>
             </div>
         </div>
+
+        <div class="aanbod aanbod-five">
+            <div class="text-section text-middle">
+                <div class="portfolio-text">
+                    <p class="head-text-white">Benieuwd naar mijn werk?</p>
+                    <p class="info-text-white">Bekijk hier mijn portfolio!</p>
+                </div>
+
+                <form class="portfolio-btn">
+                    <input type="text" id="fname" name="fname">
+                </form>
+            </div>
+        </div>
     </div>
 
     <?php include "footer.php" ?>
