@@ -9,6 +9,30 @@ body {
   background-color: #fffdea;
 }
 
+.head-text {
+  color: black;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.head-text-white {
+  color: white;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.info-text {
+  color: black;
+  font-size: 18px;
+}
+
+.info-text-white {
+  color: white;
+  font-size: 18px;
+}
+
 /* even als reminder voor mezelf: */
 /* font-family: "Open Sans", sans-serif; */
 /* font-family: "Merriweather", serif; */
