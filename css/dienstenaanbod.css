@@ -1,0 +1,98 @@
+.full-aanbod {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.head-text-white {
+  color: white;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.info-text-white {
+  color: white;
+  font-size: 18px;
+}
+
+.aanbod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 20px;
+  padding-inline: 50px;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.aanbod::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+
+.text-section {
+  background-color: #513820;
+  border-radius: 20px;
+  padding: 14px;
+  grid-column-start: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-left {
+  grid-column-start: 1;
+}
+
+.text-middle {
+  grid-column-start: 2;
+  display: flex;
+  align-items: center;
+}
+
+.aanbod-one {
+  background-image: url(../assets/fotos/bg.jpeg);
+  background-size: cover;
+}
+
+.aanbod-two {
+  background-image: url(../assets/fotos/slide2.webp);
+  background-size: cover;
+  background-position: 50% 90%;
+}
+
+.aanbod-three {
+  background-image: url(../assets/fotos/slide1.webp);
+  background-size: cover;
+  background-position: 50% 55%;
+}
+
+.aanbod-four {
+  background-image: url(../assets/fotos/slide3.webp);
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+.aanbod-five {
+  background-image: url(../assets/fotos/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
