@@ -22,7 +22,6 @@
   padding-block: 20px;
   padding-inline: 50px;
   position: relative;
-  z-index: -1;
   overflow: hidden;
 }
 

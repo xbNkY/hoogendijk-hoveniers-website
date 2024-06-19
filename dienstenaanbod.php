@@ -13,7 +13,7 @@
 
     <?php include "header.php" ?>
 
-    <div class="full-aanbod">
+    <main class="full-aanbod">
         <div class="aanbod aanbod-one">
             <div class="text-section">
                 <p class="head-text-white">Tuinontwerp</p>
@@ -49,12 +49,11 @@
                     <p class="info-text-white">Bekijk hier mijn portfolio!</p>
                 </div>
 
-                <div>
-                    <a href="portfolio.php">Portfolio</a>
-                </div>
+                <a href="portfolio.php">Portfolio</a>
+
             </div>
         </div>
-    </div>
+    </main>
 
     <?php include "footer.php" ?>
 

@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="over-ons info-text">
             <p class="big-text">Over ons</p>
             <ul>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 </body>
 
