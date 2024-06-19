@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="header">
+    <header class="header">
         <a href="index.php"><img class="logo" src="assets/logo.png" alt="logo"></a>
 
         <div class="header-links">
@@ -26,7 +26,7 @@
             <p class="link">-</p>
             <a class="link" href="portfolio.php">Portfolio</a>
         </div>
-    </div>
+    </header>
 
 </body>
 
