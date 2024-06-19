@@ -49,9 +49,9 @@
                     <p class="info-text-white">Bekijk hier mijn portfolio!</p>
                 </div>
 
-                <form class="portfolio-btn">
-                    <input type="text" id="fname" name="fname">
-                </form>
+                <div>
+                    <a href="portfolio.php">Portfolio</a>
+                </div>
             </div>
         </div>
     </div>
