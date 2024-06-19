@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         
         <form action="editPicture.php?id=<?= $id ?>" method="post" enctype="multipart/form-data">
 
-            <label for="photo">Photo:</label><br>
+            <label for="photo">Photo:<img src="<?= $photo; ?>" style="height: 25%; width: 15%;"></label><br>
             <input type="file" id="photo" name="photo" value="<?= $photo ?>"><br><br>
 
             <?php

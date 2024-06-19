@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 17, 2024 at 12:21 PM
+-- Generation Time: Jun 19, 2024 at 09:01 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -32,6 +32,22 @@ CREATE TABLE `portfolio` (
   `photo` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `portfolio`
+--
+
+INSERT INTO `portfolio` (`id`, `photo`) VALUES
+(6, '../../assets/Images/a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp'),
+(7, '../../assets/Images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg'),
+(8, '../../assets/Images/a8db60_41e28b52fdc8461dbe9e00368c7cf8d4_mv2.jpeg'),
+(9, '../../assets/Images/a8db60_87f9493ee50244389acb45a8ed75afe4_mv2.webp'),
+(13, '../../assets/Images/a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg'),
+(14, '../../assets/Images/a8db60_89729f86eabe4bf3b65d2f554cfecd6d_mv2.webp'),
+(15, '../../assets/Images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
+(16, '../../assets/Images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
+(17, '../../assets/Images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
+(18, '../../assets/Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg');
+
 -- --------------------------------------------------------
 
 --
@@ -41,9 +57,20 @@ CREATE TABLE `portfolio` (
 CREATE TABLE `recensies` (
   `id` int NOT NULL,
   `naam` varchar(200) NOT NULL,
-  `adres` varchar(200) NOT NULL,
   `opmerking` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `recensies`
+--
+
+INSERT INTO `recensies` (`id`, `naam`, `opmerking`) VALUES
+(4, 'Hella Hoes', '“Heel erg bedankt voor de efficiënte service, je was heel snel klaar en ik zal je nummer zeker behouden om je weer te gebruiken.”'),
+(5, 'Henk Haak', '“Ga alsjeblieft door met de bezoeken aan het huis van mijn vader, want je doet geweldig werk!”'),
+(6, 'Hans Hogendijk', '“Zoals u weet ben ik altijd tevreden geweest met de service die u de afgelopen jaren heeft verleend. Vertel me alstublieft wanneer u klaar bent om volgend jaar weer te beginnen met het maaien van mijn gazons, aangezien ik graag uw diensten wil blijven ontvangen.”'),
+(7, 'Hugo van Heren', '“Bedankt voor de grondige opruimbeurt die u aan mijn tuin heeft uitgevoerd. De tuin is er enorm van opgeknapt en weer bruikbaar gemaakt. Nogmaals bedankt.”'),
+(8, 'Helga Hagel', '“Mijn tuin was een mijn jungle voor en achter. Ik ben zo blij met het resultaat; u heeft zo hard gewerkt en alles mooi en netjes achtergelaten. Aarzel niet om mijn opmerkingen te gebruiken in toekomstige advertenties. Nogmaals bedankt voor al je harde werk en efficiëntie!”'),
+(9, 'Hopke Havermout-Hoeksteen', '“We zijn erg blij met ons nieuwe dak van de schuur en het andere werk dat tot een zeer hoge standaard is voltooid. Heel erg bedankt voor uw medewerking!”');
 
 --
 -- Indexes for dumped tables
@@ -69,13 +96,13 @@ ALTER TABLE `recensies`
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `recensies`
 --
 ALTER TABLE `recensies`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

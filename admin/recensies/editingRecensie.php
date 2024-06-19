@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset($_GET['id']) && !empty($_GET['id'])) {
         $id = $_GET['id'];
 
-        $sql = "SELECT id, naam, adres, opmerking FROM recensies WHERE id = ?";
+        $sql = "SELECT id, naam, opmerking FROM recensies WHERE id = ?";
 
         include_once '../../connection.php';
 ?>
@@ -47,9 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             <label for="naam">Naam:</label><br>
             <input type="text" id="naam" name="naam" value="<?= $naam ?>"><br>
-
-            <label for="adres">Adres:</label><br>
-            <input type="text" id="adres" name="adres" value="<?= $adres ?>"><br>
 
             <label for="opmerking">opmerking:</label><br>
             <input id="opmerking" name="opmerking" value="<?= $opmerking ?>"></input><br><br>
