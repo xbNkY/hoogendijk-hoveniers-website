@@ -14,7 +14,6 @@
       <tr>
         <th>ID</th>
         <th>Naam</th>
-        <th>Adres</th>
         <th>Opmerking</th>
         <th>Edit</th>
         <th>Delete</th>
@@ -22,7 +21,7 @@
     </thead>
     <tbody>
       <?php
-      $sql = "SELECT id, naam, adres, opmerking FROM recensies";
+      $sql = "SELECT id, naam, opmerking FROM recensies";
       include_once '../../connection.php';
 
       $liqry = $conn->prepare($sql);
@@ -30,13 +29,12 @@
         echo mysqli_error($conn);
       } else {
         if ($liqry->execute()) {
-          $liqry->bind_result($id, $naam, $adres, $opmerking);
+          $liqry->bind_result($id, $naam, $opmerking);
           while ($liqry->fetch()) {
       ?>
             <tr>
               <td><?= $id ?></td>
               <td><?= $naam; ?></td>
-              <td><?= $adres; ?></td>
               <td><?= $opmerking; ?></td>
               <td><a href='editingRecensie.php?id=<?= $id ?>'>Edit</a></td>
               <td><a href='deleteRecensie.php?id=<?= $id ?>'>Delete</a></td>
@@ -57,9 +55,6 @@
 
       <label for="naam">naam:</label><br>
       <input type="text" id="naam" name="naam" required><br>
-
-      <label for="adres">adres:</label><br>
-      <input type="text" id="adres" name="adres" required><br>
 
       <label for="opmerking">opmerking:</label><br>
       <textarea type="text" id="opmerking" name="opmerking" required></textarea><br>

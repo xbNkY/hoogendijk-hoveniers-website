@@ -7,11 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //setting the things as the posts so we acc got sum to work with   
     $id = $_GET['id'];
     $naam = $_POST['naam'];
-    $adres = $_POST['adres'];
     $opmerking = $_POST['opmerking'];
 
             //sql command 
-            $sql = "UPDATE recensies SET naam = ?, adres = ?, opmerking = ? WHERE id = ?";
+            $sql = "UPDATE recensies SET naam = ? = ?, opmerking = ? WHERE id = ?";
             $updateqry = $conn->prepare($sql);
 
             //if there aint a update querry, show an error 
@@ -19,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo mysqli_error($conn);
             } else {
                 //else it just updates
-                $updateqry->bind_param('sssi', $naam, $adres, $opmerking, $id);
+                $updateqry->bind_param('ssi', $naam, $opmerking, $id);
                 if ($updateqry->execute()) {
                     header("Location: index.php");
                 } else {

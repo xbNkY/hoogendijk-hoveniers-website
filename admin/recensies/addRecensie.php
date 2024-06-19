@@ -7,16 +7,15 @@ include_once '../../connection.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {    
     //checking if it isn't empty
     $naam = $_POST['naam'];
-    $adres = $_POST['adres'];
     $opmerking = $_POST['opmerking'];
 
-            $sql = "INSERT INTO recensies (naam, adres, opmerking) VALUES (?, ?, ?)";
+            $sql = "INSERT INTO recensies (naam, opmerking) VALUES (?, ?)";
             $insertqry = $conn->prepare($sql);
 
             if ($insertqry === false) {
                 echo mysqli_error($conn);
             } else {
-                $insertqry->bind_param('sss', $naam, $adres, $opmerking); 
+                $insertqry->bind_param('ss', $naam, $opmerking); 
                 if ($insertqry->execute()) {
                     //if it succesfully adds the thing
                     header("Location: index.php");
