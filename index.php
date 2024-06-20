@@ -18,14 +18,12 @@ if ($result->num_rows > 0) {
 $recensieCount = count($recensies);
 $currentRecensie = 0;
 
-//als je de images wilt inladen enz bij de portfolio moet je eerst de eerste 4 lijnen van deze code ernaartoe kopieëren, en de lijnen 22-33
-//lmk als je het liever wilt als ik (J) het voor je doe want dan doe ik het graag! :D
-//Om dan de afbeeldingen te gebruiken moet je de variabel die de array heeft, en dan kan je $arrayNaam[0]['photo'] doen om ze op te roepen :D
+
 $sql = "SELECT * FROM portfolio";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    $portfolio = array(); //<<< hier staat de variabel
+    $portfolio = array();
     while ($row = $result->fetch_assoc()) {
         $portfolio[] = $row; 
     }
