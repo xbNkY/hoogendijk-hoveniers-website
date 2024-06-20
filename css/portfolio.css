@@ -19,3 +19,9 @@
   color: black;
   font-size: 18px;
 }
+
+.portfolio-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #eeeed5;
+}

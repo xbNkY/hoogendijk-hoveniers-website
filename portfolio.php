@@ -18,6 +18,10 @@
         <p class="bekijk-dienst">Bekijk die<a class="dienstenaanbod-link" href="dienstenaanbod.php"><span>HIER</span></a>!</p>
     </div>
 
+    <div class="portfolio-imgs">
+        hallo
+    </div>
+
     <?php include "footer.php" ?>
 
 </body>
