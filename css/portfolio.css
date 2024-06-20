@@ -11,3 +11,11 @@
   align-items: center;
   padding-block: 50px;
 }
+
+.bekijk-dienst {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: black;
+  font-size: 18px;
+}

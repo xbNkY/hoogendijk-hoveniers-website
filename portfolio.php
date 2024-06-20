@@ -15,7 +15,7 @@
     <div class="portfolio-text">
         <p class="head-text">Bekijk hier een selectie van de door mij uitgevoerde diensten</p>
         <p class="info-text">Benieuwd naar mijn volledige dienstenaanbod?</p>
-        <p class="info-text">Bekijk die<a class="dienstenaanbod-link" href="dienstenaanbod.php"><span>HIER</span></a>!</p>
+        <p class="bekijk-dienst">Bekijk die<a class="dienstenaanbod-link" href="dienstenaanbod.php"><span>HIER</span></a>!</p>
     </div>
 
     <?php include "footer.php" ?>

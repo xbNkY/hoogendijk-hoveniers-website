@@ -19,9 +19,6 @@ body {
 .info-text {
   color: black;
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
 }
 
 /* even als reminder voor mezelf: */
