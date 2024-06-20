@@ -1,0 +1,13 @@
+.dienstenaanbod-link {
+  color: #435e29;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}

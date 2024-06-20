@@ -95,3 +95,17 @@
   align-items: center;
   gap: 0px;
 }
+
+.portfolio-btn {
+  background-color: #435e29;
+  text-decoration: none;
+  color: white;
+  padding-block: 5px;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+.portfolio-btn:hover {
+  background-color: #536f39;
+  transition: 0.2s;
+}
