@@ -71,8 +71,9 @@
                     <img class="customer" src="assets/hendrik.jpg" alt="hendrik">
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form message-and-button">
                     <textarea class="contact-input big-input" name="message" placeholder="Bericht:" rows="5"></textarea>
+                    <input type="submit" value="Versturen" class="send-btn">
                 </form>
             </div>
         </div>
