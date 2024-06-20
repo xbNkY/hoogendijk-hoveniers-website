@@ -1,0 +1,79 @@
+.dienstenaanbod-link {
+  color: #435e29;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.bekijk-dienst {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: black;
+  font-size: 18px;
+}
+
+.portfolio-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+  background-color: #eeeed5;
+  /* background-color: yellow; */
+  height: 1200px;
+  margin-inline: 100px;
+  padding: 20px;
+}
+
+.test {
+  background-color: green;
+}
+
+.img1 {
+  object-fit: cover;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+}
+
+.img2 {
+  object-fit: cover;
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 4;
+}
+
+.img3 {
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 5 / span 5;
+}
+
+.img4 {
+  object-fit: cover;
+  grid-column: 2;
+  grid-row: 5 / span 4;
+}
+
+.img5 {
+  object-fit: cover;
+  grid-column: 3;
+  grid-row: 5 / span 3;
+}
+
+.img6 {
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 10 / span 5;
+}
+
+.img7 {
+  object-fit: cover;
+  grid-column: 2;
+  grid-row: 9 / span 3;
+}

@@ -31,6 +31,7 @@
   position: relative;
   z-index: 1;
   grid-column-start: 2;
+  filter: drop-shadow(black 0px 1px 5px);
 }
 
 .offers-text {
@@ -133,4 +134,22 @@
 
 .big-input {
   resize: none;
+}
+
+.message-and-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-btn {
+  background-color: #435e29;
+  color: white;
+  padding-block: 5px;
+  border-radius: 20px;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  background-color: #536f39;
+  transition: 0.2s;
 }

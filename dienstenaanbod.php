@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dienstenaanbod.css">
     <title>Dienstenaanbod</title>
 </head>
@@ -49,7 +48,7 @@
                     <p class="info-text-white">Bekijk hier mijn portfolio!</p>
                 </div>
 
-                <a href="portfolio.php">Portfolio</a>
+                <a class="portfolio-btn" href="portfolio.php">Portfolio</a>
 
             </div>
         </div>
