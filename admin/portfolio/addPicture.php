@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $photoTempName = $_FILES['photo']['tmp_name'];
         $photoSize = $_FILES['photo']['size'];
 
-        $wantedDirectory = '../../assets/Images/';
+        $wantedDirectory = 'Images/';
         $wantedPath = $wantedDirectory . $photoName;
 
         if(move_uploaded_file($photoTempName, $wantedPath)) {

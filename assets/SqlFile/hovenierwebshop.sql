@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 19, 2024 at 09:01 AM
+-- Generation Time: Jun 20, 2024 at 01:10 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -37,16 +37,16 @@ CREATE TABLE `portfolio` (
 --
 
 INSERT INTO `portfolio` (`id`, `photo`) VALUES
-(6, '../../assets/Images/a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp'),
-(7, '../../assets/Images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg'),
-(8, '../../assets/Images/a8db60_41e28b52fdc8461dbe9e00368c7cf8d4_mv2.jpeg'),
-(9, '../../assets/Images/a8db60_87f9493ee50244389acb45a8ed75afe4_mv2.webp'),
-(13, '../../assets/Images/a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg'),
-(14, '../../assets/Images/a8db60_89729f86eabe4bf3b65d2f554cfecd6d_mv2.webp'),
-(15, '../../assets/Images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
-(16, '../../assets/Images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
-(17, '../../assets/Images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
-(18, '../../assets/Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg');
+(22, 'Images/a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp'),
+(23, 'Images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg'),
+(24, 'Images/a8db60_41e28b52fdc8461dbe9e00368c7cf8d4_mv2.jpeg'),
+(25, 'Images/a8db60_87f9493ee50244389acb45a8ed75afe4_mv2.webp'),
+(26, 'Images/a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg'),
+(27, 'Images/a8db60_89729f86eabe4bf3b65d2f554cfecd6d_mv2.webp'),
+(28, 'Images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
+(29, 'Images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
+(30, 'Images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
+(31, 'Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ ALTER TABLE `recensies`
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `recensies`

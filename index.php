@@ -1,3 +1,64 @@
+<?php
+session_start();
+
+include_once 'connection.php';
+
+$sql = "SELECT * FROM recensies";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $recensies = array();
+    while ($row = $result->fetch_assoc()) {
+        $recensies[] = $row;
+    }
+} else {
+    echo "No recensies found";
+}
+
+$recensieCount = count($recensies);
+$currentRecensie = 0;
+
+//als je de images wilt inladen enz bij de portfolio moet je eerst de eerste 4 lijnen van deze code ernaartoe kopieëren, en de lijnen 22-33
+//lmk als je het liever wilt als ik (J) het voor je doe want dan doe ik het graag! :D
+//Om dan de afbeeldingen te gebruiken moet je de variabel die de array heeft, en dan kan je $arrayNaam[0]['photo'] doen om ze op te roepen :D
+$sql = "SELECT * FROM portfolio";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $portfolio = array(); //<<< hier staat de variabel
+    while ($row = $result->fetch_assoc()) {
+        $portfolio[] = $row; 
+    }
+} else {
+    echo "No portfolio found";
+}
+$conn->close();
+?>
+
+<!-- <script>
+    let currentRecensie = <?= $currentRecensie ?>;
+    let recensieCount = <?= $recensieCount ?>;
+
+    //idk of dit juist is om alle recensies enz laat zien maar kijk er morgen zwz verder naar :)
+    function reduceRecensie() {
+        if (currentRecensie != 0) {
+            currentRecensie--;
+        } else {
+            currentRecensie = recensieCount;
+        }
+        alert('Vorige recensie...'.currentRecensie);
+    }
+
+    function addRecensie() {
+        if (currentRecensie != recensieCount) {
+            currentRecensie++;
+        } else {
+            currentRecensie = 0;
+        }
+        alert('Volgende recensie...'.currentRecensies);
+    }
+</script> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,9 +90,9 @@
         <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
         <div class="slideshow">
             <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-            <img class="slide-img" src="assets/fotos/slide1.webp" alt="slide1">
-            <img class="slide-img" src="assets/fotos/slide2.webp" alt="slide2">
-            <img class="slide-img" src="assets/fotos/slide3.webp" alt="slide3">
+            <img class="slide-img" src="admin/portfolio/<?= $portfolio[0]['photo'] ?>" alt="slide1">
+            <img class="slide-img" src="admin/portfolio/<?= $portfolio[1]['photo'] ?>" alt="slide2">
+            <img class="slide-img" src="admin/portfolio/<?= $portfolio[2]['photo'] ?>" alt="slide3">
             <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
         </div>
     </div>
@@ -41,17 +102,33 @@
     </div>
 
     <div class="review-and-contact">
-        <div class="reviews">
-            <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-            <div class="text-box">
-                <div class="name-and-date">
-                    <p class="head-text">Naam van de Klant</p>
-                    <p class="info-text">01-01-2024</p>
+        <?php
+        if (isset($recensies)) {
+        ?>
+
+            <div class="reviews">
+                <button onclick="reduceRecensie()" style="border: 0px; background-color: transparent;">
+                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                </button>
+
+                <div class="text-box">
+                    <div class="name-and-date">
+                        <p class="head-text"><?= $recensies[$currentRecensie]['naam'] ?></p>
+                        <p class="info-text">01-01-2024</p>
+                    </div>
+                    <p class="info-text"><?= $recensies[$currentRecensie]['opmerking']; ?></p>
                 </div>
-                <p class="info-text">Hier komen wat recensies die op de website zijn geplaatst!</p>
+
+                <button onclick="addRecensie()" style="border: 0px; background-color: transparent;">
+                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                </button>
             </div>
-            <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
-        </div>
+        <?php
+        } else {
+            echo "No products available.";
+        }
+
+        ?>
 
         <div class="contact">
             <div class="text-box">
