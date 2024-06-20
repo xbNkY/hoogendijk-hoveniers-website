@@ -23,6 +23,7 @@
 .portfolio-imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
   grid-template-rows: repeat(12, 1fr);
   gap: 10px;
   background-color: #eeeed5;
@@ -76,4 +77,7 @@
   object-fit: cover;
   grid-column: 2;
   grid-row: 9 / span 3;
+=======
+  background-color: #eeeed5;
+>>>>>>> bc0a7e96bc41b4decd4ddda8e7c3e6d15a0bcdae
 }
