@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
         $photoName = basename($_FILES['photo']['name']);
         $photoTempName = $_FILES['photo']['tmp_name'];
-        $wantedDirectory = '../../assets/Images/';
+        $wantedDirectory = 'Images/';
         $wantedPath = $wantedDirectory . $photoName;
 
         if (move_uploaded_file($photoTempName, $wantedPath)) {
