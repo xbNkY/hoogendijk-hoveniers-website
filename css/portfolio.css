@@ -23,12 +23,12 @@
 .portfolio-imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
   gap: 10px;
   background-color: #eeeed5;
-  /* background-color: yellow; */
   height: 1200px;
   margin-inline: 100px;
+  margin-bottom: 50px;
   padding: 20px;
 }
 
@@ -44,7 +44,7 @@
 
 .img2 {
   object-fit: cover;
-  grid-column: 3 / span 3;
+  grid-column: 3;
   grid-row: 1 / span 4;
 }
 
@@ -76,4 +76,16 @@
   object-fit: cover;
   grid-column: 2;
   grid-row: 9 / span 3;
+}
+
+.img8 {
+  object-fit: cover;
+  grid-column: 3;
+  grid-row: 8 / span 4;
+}
+
+.img9 {
+  object-fit: cover;
+  grid-column: 2 / span 2;
+  grid-row: 12 / span 3;
 }
