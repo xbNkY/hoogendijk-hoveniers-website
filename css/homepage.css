@@ -1,6 +1,7 @@
 .top-info {
-  background-image: url("../assets/fotos/bg.jpeg");
+  background-image: url("../admin/portfolio/Images/thumbnail_tuin1.jpg");
   background-size: cover;
+  background-position: 50% 60%;
   padding-block: 20px;
   padding-inline: 50px;
   position: relative;
