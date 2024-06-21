@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $portfolio = array();
     while ($row = $result->fetch_assoc()) {
-        $portfolio[] = $row; 
+        $portfolio[] = $row;
     }
 } else {
     echo "No portfolio found";
@@ -96,7 +96,7 @@ $conn->close();
     </div>
 
     <div style="display:flex;">
-        <img class="seperator-img" src="assets/fotos/bg.jpeg" alt="seperator">
+        <img class="seperator-img" src="admin/portfolio/<?= $portfolio[10]['photo'] ?>" alt="seperator">
     </div>
 
     <div class="review-and-contact">
