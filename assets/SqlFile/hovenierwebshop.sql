@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 20, 2024 at 01:10 PM
+-- Generation Time: Jun 21, 2024 at 09:46 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -46,7 +46,10 @@ INSERT INTO `portfolio` (`id`, `photo`) VALUES
 (28, 'Images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
 (29, 'Images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
 (30, 'Images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
-(31, 'Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg');
+(31, 'Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg'),
+(32, 'Images/thumbnail_tuin1.jpg'),
+(33, 'Images/thumbnail_tuin2.jpg'),
+(34, 'Images/tuin3.jpg');
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,7 @@ ALTER TABLE `recensies`
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `recensies`
