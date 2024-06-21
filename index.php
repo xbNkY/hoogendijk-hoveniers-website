@@ -16,8 +16,6 @@ if ($result->num_rows > 0) {
 }
 
 $recensieCount = count($recensies);
-$currentRecensie = 0;
-
 
 $sql = "SELECT * FROM portfolio";
 $result = $conn->query($sql);
@@ -32,30 +30,40 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+<script>
+    let currentRecensie = 0;
+    const recensie = <?= json_encode($recensies); ?>;
+    const recensieCount = recensie.length;
 
-<!-- <script>
-    let currentRecensie = <?= $currentRecensie ?>;
-    let recensieCount = <?= $recensieCount ?>;
+    //Om te updaten wat d'r staat van de recensie
+    function updateRecensie(index) {
+        document.getElementById('recensieNaam').innerText = recensie[index].naam;
+        document.getElementById('recensieOpmerking').innerText = recensie[index].opmerking;
+    }
 
-    //idk of dit juist is om alle recensies enz laat zien maar kijk er morgen zwz verder naar :)
-    function reduceRecensie() {
+    //Function voor de < knop
+    function prevRecensie() {
         if (currentRecensie != 0) {
             currentRecensie--;
         } else {
-            currentRecensie = recensieCount;
+            currentRecensie = recensieCount - 1;
         }
-        alert('Vorige recensie...'.currentRecensie);
+        updateRecensie(currentRecensie);
     }
 
-    function addRecensie() {
-        if (currentRecensie != recensieCount) {
+    //Function voor de > knop
+    function nextRecensie() {
+        if (currentRecensie != recensieCount - 1) {
             currentRecensie++;
         } else {
             currentRecensie = 0;
         }
-        alert('Volgende recensie...'.currentRecensies);
+        updateRecensie(currentRecensie);
     }
-</script> -->
+
+    //Om de 1e review te laten zien
+    updateRecensie(currentRecensie);
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,34 +108,25 @@ $conn->close();
     </div>
 
     <div class="review-and-contact">
-        <?php
-        if (isset($recensies)) {
-        ?>
 
-            <div class="reviews">
-                <button onclick="reduceRecensie()" style="border: 0px; background-color: transparent;">
-                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-                </button>
+        <div class="reviews">
+            <button onclick="prevRecensie()" style="border: 0px; background-color: transparent;">
+                <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+            </button>
 
-                <div class="text-box">
-                    <div class="name-and-date">
-                        <p class="head-text"><?= $recensies[$currentRecensie]['naam'] ?></p>
-                        <p class="info-text">01-01-2024</p>
-                    </div>
-                    <p class="info-text"><?= $recensies[$currentRecensie]['opmerking']; ?></p>
+            <div class="text-box">
+                <div class="name-and-date">
+                    <!-- id's voor de lijnen van de naam n opmerking is om de javascript d'r aan te koppelen enz :) -->
+                    <p id="recensieNaam" class="head-text"><?= $recensies[0]['naam'] ?></p>
+                    <p class="info-text">01-01-2024</p>
                 </div>
-
-                <button onclick="addRecensie()" style="border: 0px; background-color: transparent;">
-                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
-                </button>
+                <p id="recensieOpmerking" class="info-text"><?= $recensies[0]['opmerking']; ?></p>
             </div>
-        <?php
-        } else {
-            echo "No products available.";
-        }
 
-        ?>
-
+            <button onclick="nextRecensie()" style="border: 0px; background-color: transparent;">
+                <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+            </button>
+        </div>
         <div class="contact">
             <div class="text-box">
                 <div class="text-and-image">
