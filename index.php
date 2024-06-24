@@ -46,7 +46,6 @@ $conn->close();
 
     <?php include "header.php" ?>
 
-
     <div class="top-info">
         <div class="container top-info-container">
             <div class="text-box">
@@ -97,6 +96,7 @@ $conn->close();
                 <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
             </button>
         </div>
+
         <div class="contact">
             <div class="text-box">
                 <div class="text-and-image">

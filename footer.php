@@ -35,7 +35,7 @@
 
                 <div class="num-and-sm">
                     <p class="small-text">
-                        <a class="phone-number" href="tel:06123456789">+31 6 12345678</a> <!-- deze is actief, hyperlink is blauw, zie footer.css line: 75-->
+                        <a class="phone-number" href="tel:06123456789">+31 6 12345678</a>
                     </p>
                     <div class="sm-logos">
                         <a href=""><img src="assets/facebook.svg" alt="fb-logo"></a>
@@ -57,7 +57,6 @@
                     </div>
                 </div>
             </div>
-
     </footer>
 
 </body>

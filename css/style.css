@@ -56,3 +56,45 @@ body {
     gap: 120px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .header-links {
+    margin-right: 10px;
+  }
+
+  .container-footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .text-and-slideshow {
+    grid-template-columns: 1fr;
+    padding-block: 50px;
+    padding-inline: 50px;
+    gap: 50px;
+  }
+
+  .seperator-img {
+    height: 100px;
+  }
+
+  .review-and-contact {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-inline: 0;
+    padding-block: 50px;
+  }
+}
