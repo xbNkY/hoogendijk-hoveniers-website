@@ -2,14 +2,16 @@
   background-color: #435e29;
   width: 100%;
   padding-block: 12px;
+  filter: drop-shadow(0px 5px 10px);
+  position: relative;
+  z-index: 2;
+}
+
+.container-header-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  filter: drop-shadow(0px 5px 10px);
-
-  position: relative;
-  z-index: 2;
 }
 
 .logo {

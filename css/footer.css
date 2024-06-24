@@ -1,11 +1,14 @@
 .footer {
   background-color: #435e29;
   width: 100%;
+  padding-block: 12px;
+}
+
+.container-footer-content {
   display: flex;
   flex-direction: row;
   gap: 200px;
   justify-content: center;
-  padding-block: 12px;
 }
 
 .info-text {
