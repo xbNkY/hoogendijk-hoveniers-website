@@ -17,10 +17,15 @@
 }
 
 .aanbod {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-block: 20px;
   padding-inline: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.aanbod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   position: relative;
   overflow: hidden;
 }

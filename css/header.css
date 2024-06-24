@@ -7,13 +7,6 @@
   z-index: 2;
 }
 
-.container-header-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo {
   height: 60px;
   width: auto;

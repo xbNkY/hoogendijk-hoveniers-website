@@ -35,4 +35,24 @@ body {
   .container {
     width: 1280px;
   }
+
+  .container-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+  }
+
+  .top-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+  }
 }
