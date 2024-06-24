@@ -30,40 +30,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-<script>
-    let currentRecensie = 0;
-    const recensie = <?= json_encode($recensies); ?>;
-    const recensieCount = recensie.length;
 
-    //Om te updaten wat d'r staat van de recensie
-    function updateRecensie(index) {
-        document.getElementById('recensieNaam').innerText = recensie[index].naam;
-        document.getElementById('recensieOpmerking').innerText = recensie[index].opmerking;
-    }
-
-    //Function voor de < knop
-    function prevRecensie() {
-        if (currentRecensie != 0) {
-            currentRecensie--;
-        } else {
-            currentRecensie = recensieCount - 1;
-        }
-        updateRecensie(currentRecensie);
-    }
-
-    //Function voor de > knop
-    function nextRecensie() {
-        if (currentRecensie != recensieCount - 1) {
-            currentRecensie++;
-        } else {
-            currentRecensie = 0;
-        }
-        updateRecensie(currentRecensie);
-    }
-
-    //Om de 1e review te laten zien
-    updateRecensie(currentRecensie);
-</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -161,3 +128,37 @@ $conn->close();
 </body>
 
 </html>
+<script>
+    let currentRecensie = 0;
+    const recensie = <?= json_encode($recensies); ?>;
+    const recensieCount = recensie.length;
+
+    //Om te updaten wat d'r staat van de recensie
+    function updateRecensie(index) {
+        document.getElementById('recensieNaam').innerText = recensie[index].naam;
+        document.getElementById('recensieOpmerking').innerText = recensie[index].opmerking;
+    }
+
+    //Function voor de < knop
+    function prevRecensie() {
+        if (currentRecensie != 0) {
+            currentRecensie--;
+        } else {
+            currentRecensie = recensieCount - 1;
+        }
+        updateRecensie(currentRecensie);
+    }
+
+    //Function voor de > knop
+    function nextRecensie() {
+        if (currentRecensie != recensieCount - 1) {
+            currentRecensie++;
+        } else {
+            currentRecensie = 0;
+        }
+        updateRecensie(currentRecensie);
+    }
+
+    //Om de 1e review te laten zien
+    updateRecensie(currentRecensie);
+</script>

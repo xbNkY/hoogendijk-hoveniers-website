@@ -33,13 +33,15 @@
             <div class="contact info-text">
                 <p class="big-text">Contact</p>
 
-                <div class="num-and-sm">
-                    <p class="small-text">06-12345678</p>
-                    <div class="sm-logos">
-                        <a href=""><img src="assets/facebook.svg" alt="fb-logo"></a>
-                        <a href=""><img class="ig-logo" src="assets/instagram (1).svg" alt="ig-logo"></a>
-                        <a href=""><img src="assets/mail.svg" alt="mail-logo"></a>
-                    </div>
+            <div class="num-and-sm">
+                <p class="small-text">
+                    <a class="phone-number" href="tel:06123456789">+31 6 12345678</a>           <!-- deze is actief, hyperlink is blauw, zie footer.css line: 75-->
+                </p>
+                <div class="sm-logos">
+                    <a href=""><img src="assets/facebook.svg" alt="fb-logo"></a>
+                    <a href=""><img class="ig-logo" src="assets/instagram (1).svg" alt="ig-logo"></a>
+                    <a href=""><img src="assets/mail.svg" alt="mail-logo"></a>
+
                 </div>
             </div>
 
