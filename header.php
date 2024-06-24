@@ -17,14 +17,16 @@
 <body>
 
     <header class="header">
-        <a href="index.php"><img class="logo" src="assets/logo.png" alt="logo"></a>
+        <div class="container container-header-content">
+            <a href="index.php"><img class="logo" src="assets/logo.png" alt="logo"></a>
 
-        <div class="header-links">
-            <a class="link" href="index.php">Homepagina</a>
-            <p class="link">-</p>
-            <a class="link" href="dienstenaanbod.php">Dienstenaanbod</a>
-            <p class="link">-</p>
-            <a class="link" href="portfolio.php">Portfolio</a>
+            <div class="header-links">
+                <a class="link" href="index.php">Homepagina</a>
+                <p class="link">-</p>
+                <a class="link" href="dienstenaanbod.php">Dienstenaanbod</a>
+                <p class="link">-</p>
+                <a class="link" href="portfolio.php">Portfolio</a>
+            </div>
         </div>
     </header>
 

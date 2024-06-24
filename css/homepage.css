@@ -6,9 +6,6 @@
   padding-inline: 50px;
   position: relative;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 120px;
 }
 
 .top-info::after {
@@ -44,7 +41,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 120px;
   padding-block: 50px;
-  padding-inline: 50px;
   justify-content: center;
 }
 

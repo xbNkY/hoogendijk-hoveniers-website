@@ -48,25 +48,29 @@ $conn->close();
 
 
     <div class="top-info">
-        <div class="text-box">
-            <p class="head-text">Welkom bij de website van Hendrik Hogendijk, hovenier in de regio Utrecht, Zeist en de Bilt.</p>
-            <p class="info-text">De tuin is een belangrijke plek van de woning, waar je het liefst zoveel mogelijk tijd in doorbrengt. Bij Hendrik Hogendijk Hoveniers vinden wij het daarom belangrijk dat iedereen zich thuis voelt in zijn of haar tuin. Ik maak de tuin onderdeel van jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.</p>
+        <div class="container top-info-container">
+            <div class="text-box">
+                <p class="head-text">Welkom bij de website van Hendrik Hogendijk, hovenier in de regio Utrecht, Zeist en de Bilt.</p>
+                <p class="info-text">De tuin is een belangrijke plek van de woning, waar je het liefst zoveel mogelijk tijd in doorbrengt. Bij Hendrik Hogendijk Hoveniers vinden wij het daarom belangrijk dat iedereen zich thuis voelt in zijn of haar tuin. Ik maak de tuin onderdeel van jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.</p>
+            </div>
         </div>
     </div>
 
-    <div class="text-and-slideshow">
-        <div class="text-box offers-text">
-            <p class="head-text">Wat bied ik aan?</p>
-            <p class="info-text">Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.</p>
-        </div>
+    <div class="container">
+        <div class="text-and-slideshow">
+            <div class="text-box offers-text">
+                <p class="head-text">Wat bied ik aan?</p>
+                <p class="info-text">Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.</p>
+            </div>
 
-        <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
-        <div class="slideshow">
-            <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-            <img class="slide-img" src="admin/portfolio/<?= $portfolio[0]['photo'] ?>" alt="slide1">
-            <img class="slide-img" src="admin/portfolio/<?= $portfolio[1]['photo'] ?>" alt="slide2">
-            <img class="slide-img" src="admin/portfolio/<?= $portfolio[2]['photo'] ?>" alt="slide3">
-            <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+            <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
+            <div class="slideshow">
+                <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                <img class="slide-img" src="admin/portfolio/<?= $portfolio[0]['photo'] ?>" alt="slide1">
+                <img class="slide-img" src="admin/portfolio/<?= $portfolio[1]['photo'] ?>" alt="slide2">
+                <img class="slide-img" src="admin/portfolio/<?= $portfolio[2]['photo'] ?>" alt="slide3">
+                <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+            </div>
         </div>
     </div>
 
@@ -74,8 +78,7 @@ $conn->close();
         <img class="seperator-img" src="admin/portfolio/<?= $portfolio[10]['photo'] ?>" alt="seperator">
     </div>
 
-    <div class="review-and-contact">
-
+    <div class="review-and-contact container">
         <div class="reviews">
             <button onclick="prevRecensie()" style="border: 0px; background-color: transparent;">
                 <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
