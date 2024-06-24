@@ -31,6 +31,7 @@ body {
   margin-left: auto;
 }
 
+/* grotere schermen voor pc */
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
@@ -57,6 +58,7 @@ body {
   }
 }
 
+/* schermen zoals ipad */
 @media screen and (max-width: 768px) {
   .container-header-content {
     display: flex;
@@ -96,5 +98,19 @@ body {
     gap: 50px;
     padding-inline: 0;
     padding-block: 50px;
+  }
+
+  .aanbod-grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aanbod {
+    padding-inline: 100px;
+  }
+
+  .portfolio-imgs {
+    margin-inline: 50px;
   }
 }
