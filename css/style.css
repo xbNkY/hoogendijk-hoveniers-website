@@ -37,20 +37,6 @@ body {
     width: 1280px;
   }
 
-  .container-header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .container-footer-content {
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
-    justify-content: center;
-  }
-
   .top-info-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,27 +45,13 @@ body {
 }
 
 /* schermen zoals ipad */
-@media screen and (max-width: 768px) {
-  .container-header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
+@media screen and (max-width: 1024px) {
   .logo {
     margin-left: 10px;
   }
 
   .header-links {
     margin-right: 10px;
-  }
-
-  .container-footer-content {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: center;
   }
 
   .text-and-slideshow {
@@ -100,9 +72,12 @@ body {
     padding-block: 50px;
   }
 
+  .reviews {
+    margin-inline: 50px;
+  }
+
   .aanbod-grid {
-    grid-template-columns: 1fr;
-    align-items: center;
+    display: flex;
     justify-content: center;
   }
 

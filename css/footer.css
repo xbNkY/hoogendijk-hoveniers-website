@@ -4,6 +4,12 @@
   padding-block: 12px;
 }
 
+.container-footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .info-text {
   display: flex;
   flex-direction: column;
