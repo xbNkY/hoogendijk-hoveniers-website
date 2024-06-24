@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `portfolio` (
   `id` int NOT NULL,
   `photo` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `portfolio`
@@ -61,7 +61,7 @@ CREATE TABLE `recensies` (
   `id` int NOT NULL,
   `naam` varchar(200) NOT NULL,
   `opmerking` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `recensies`

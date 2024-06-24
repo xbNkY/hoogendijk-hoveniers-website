@@ -71,3 +71,9 @@
 .send-icon {
   display: flex;
 }
+
+.phone-number { 
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
