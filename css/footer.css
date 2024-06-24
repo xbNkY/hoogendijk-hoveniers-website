@@ -68,8 +68,7 @@
   display: flex;
 }
 
-.phone-number { 
+.phone-number {
   text-decoration: none;
   color: inherit;
-  cursor: default;
 }
