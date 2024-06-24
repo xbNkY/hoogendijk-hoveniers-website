@@ -4,6 +4,12 @@
   padding-block: 12px;
 }
 
+.container-footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .info-text {
   display: flex;
   flex-direction: column;
@@ -68,8 +74,7 @@
   display: flex;
 }
 
-.phone-number { 
+.phone-number {
   text-decoration: none;
   color: inherit;
-  cursor: default;
 }

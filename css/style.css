@@ -31,28 +31,61 @@ body {
   margin-left: auto;
 }
 
+/* grotere schermen voor pc */
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-  }
-
-  .container-header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .container-footer-content {
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
-    justify-content: center;
   }
 
   .top-info-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 120px;
+  }
+}
+
+/* schermen zoals ipad */
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  .header-links {
+    margin-right: 10px;
+  }
+
+  .text-and-slideshow {
+    grid-template-columns: 1fr;
+    padding-block: 50px;
+    padding-inline: 50px;
+    gap: 50px;
+  }
+
+  .seperator-img {
+    height: 100px;
+  }
+
+  .review-and-contact {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-inline: 0;
+    padding-block: 50px;
+  }
+
+  .reviews {
+    margin-inline: 50px;
+  }
+
+  .aanbod-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aanbod {
+    padding-inline: 100px;
+  }
+
+  .portfolio-imgs {
+    margin-inline: 50px;
   }
 }
