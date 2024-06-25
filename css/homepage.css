@@ -95,7 +95,7 @@
   flex-direction: column;
 }
 
-.contact {
+.contact-full {
   display: flex;
   justify-content: center;
 }

@@ -161,7 +161,19 @@ body {
     margin-inline: 10px;
   }
 
-  .contact {
+  .contact-full {
     margin-inline: 10px;
+  }
+
+  .info-text-white {
+    font-size: 14px;
+  }
+
+  .head-text-white {
+    font-size: 16px;
+  }
+
+  .aanbod {
+    padding-inline: 10px;
   }
 }
