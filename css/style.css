@@ -93,6 +93,7 @@ body {
 @media screen and (max-width: 750px) {
   .container-header-content {
     flex-direction: column;
+    gap: 10px;
   }
 
   .logo {
@@ -175,5 +176,20 @@ body {
 
   .aanbod {
     padding-inline: 10px;
+  }
+
+  .portfolio-imgs {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+  }
+
+  .portfolio-text {
+    text-align: center;
+  }
+
+  .bekijk-dienst {
+    font-size: 14px;
   }
 }
