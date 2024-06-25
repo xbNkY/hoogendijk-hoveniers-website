@@ -147,4 +147,21 @@ body {
   .slideshow {
     gap: 5px;
   }
+
+  .customer {
+    width: 110px;
+    height: 110px;
+  }
+
+  .text-and-image {
+    gap: 10px;
+  }
+
+  .reviews {
+    margin-inline: 10px;
+  }
+
+  .contact {
+    margin-inline: 10px;
+  }
 }
