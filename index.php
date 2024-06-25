@@ -97,7 +97,7 @@ $conn->close();
             </button>
         </div>
 
-        <div class="contact">
+        <div class="contact-full">
             <div class="text-box">
                 <div class="text-and-image">
                     <div class="info-name-adres">
