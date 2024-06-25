@@ -89,3 +89,62 @@ body {
     margin-inline: 50px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .container-header-content {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: 0;
+    height: 40px;
+  }
+
+  .header-links {
+    margin: 0;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .container-footer-content {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+    width: fit-content;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+
+  .big-text {
+    font-size: 16px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .head-text {
+    font-size: 16px;
+  }
+
+  .top-info {
+    padding-inline: 30px;
+  }
+
+  .slide-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .arrow {
+    width: 20px;
+  }
+
+  .slideshow {
+    gap: 5px;
+  }
+}

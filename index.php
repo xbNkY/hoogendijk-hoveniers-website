@@ -73,11 +73,11 @@ $conn->close();
         </div>
     </div>
 
-    <div style="display:flex;">
+    <!-- <div style="display:flex;">
         <img class="seperator-img" src="admin/portfolio/<?= $portfolio[10]['photo'] ?>" alt="seperator">
-    </div>
+    </div> -->
 
-    <div class="review-and-contact container">
+    <!-- <div class="review-and-contact container">
         <div class="reviews">
             <button onclick="prevRecensie()" style="border: 0px; background-color: transparent;">
                 <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
@@ -85,7 +85,7 @@ $conn->close();
 
             <div class="text-box">
                 <div class="name-and-date">
-                    <!-- id's voor de lijnen van de naam n opmerking is om de javascript d'r aan te koppelen enz :) -->
+                    id's voor de lijnen van de naam n opmerking is om de javascript d'r aan te koppelen enz :)
                     <p id="recensieNaam" class="head-text"><?= $recensies[0]['naam'] ?></p>
                     <p class="info-text">01-01-2024</p>
                 </div>
@@ -121,7 +121,7 @@ $conn->close();
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <?php include "footer.php" ?>
 
