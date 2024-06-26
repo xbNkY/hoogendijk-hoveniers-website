@@ -7,6 +7,13 @@
 
 body {
   background-color: #fffdea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .head-text {
@@ -41,15 +48,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 120px;
-  }
-}
-
-/* J: Bij het doen van min-width, sluit je de pixels tussen 1280 en 1024 uit van enige repsosiveness die je hebt gemaakt! 
-Gebruik daarom hier beide min en max width, waardoor de ruimte tussen de volgende responsiveness met de max width ook word
-gecoverd door de @media!! :D*/
-@media screen and (max-width: 1280px) {
-  .container {
-    width: 85%;
   }
 }
 
