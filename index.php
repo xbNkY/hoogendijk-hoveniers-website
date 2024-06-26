@@ -36,8 +36,8 @@ $result = $conn->query($sql);
 
 $images = [];
 if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()){
-    $images[] = $row['image_url'];
+    while ($row = $result->fetch_assoc()) {
+        $images[] = $row['image_url'];
     }
 } else {
     echo "0 results";
@@ -85,7 +85,7 @@ $conn->close();
                 <button onclick="prevImage()">
                     <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
                 </button>
-                    <img id="sliderImage" src="" alt="Image Slider">
+                <img id="sliderImage" src="" alt="Image Slider">
                 <button onclick="nextImage()">
                     <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
                 </button>
@@ -109,21 +109,64 @@ $conn->close();
                     <p id="recensieNaam" class="head-text"><?= $recensies[0]['naam'] ?></p>
                     <p class="info-text">01-01-2024</p>
                 </div>
-                <p id="recensieOpmerking" class="info-text"><?= $recensies[0]['opmerking']; ?></p>
             </div>
-
-            <button onclick="nextRecensie()" style="border: 0px; background-color: transparent;">
-                <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
-            </button>
         </div>
 
-        <div class="contact-full">
-            <div class="text-box">
-                <div class="text-and-image">
-                    <div class="info-name-adres">
-                        <div class="contact-text">
-                            <p class="head-text">Heeft u vragen?</p>
-                            <p class="info-text">Vul dit formulier in en wij nemen contact met u op!</p>
+        <div class="container">
+            <div class="text-and-slideshow">
+                <div class="text-box offers-text">
+                    <p class="head-text">Wat bied ik aan?</p>
+                    <p class="info-text">Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.</p>
+                </div>
+
+                <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
+                <div class="slideshow">
+                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                    <img class="slide-img" src="admin/portfolio/<?= $portfolio[0]['photo'] ?>" alt="slide1">
+                    <img class="slide-img" src="admin/portfolio/<?= $portfolio[1]['photo'] ?>" alt="slide2">
+                    <img class="slide-img" src="admin/portfolio/<?= $portfolio[2]['photo'] ?>" alt="slide3">
+                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex;">
+            <img class="seperator-img" src="admin/portfolio/<?= $portfolio[10]['photo'] ?>" alt="seperator">
+        </div>
+
+        <div class="review-and-contact container">
+            <div class="reviews">
+                <button onclick="prevRecensie()" style="border: 0px; background-color: transparent;">
+                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                </button>
+
+                <div class="text-box">
+                    <div class="name-and-date">
+                        <!-- id's voor de lijnen van de naam n opmerking is om de javascript d'r aan te koppelen enz :) -->
+                        <p id="recensieNaam" class="head-text"><?= $recensies[0]['naam'] ?></p>
+                        <p class="info-text">01-01-2024</p>
+                    </div>
+                    <p id="recensieOpmerking" class="info-text"><?= $recensies[0]['opmerking']; ?></p>
+                </div>
+
+                <button onclick="nextRecensie()" style="border: 0px; background-color: transparent;">
+                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                </button>
+            </div>
+
+            <div class="contact-full">
+                <div class="text-box">
+                    <div class="text-and-image">
+                        <div class="info-name-adres">
+                            <div class="contact-text">
+                                <p class="head-text">Heeft u vragen?</p>
+                                <p class="info-text">Vul dit formulier in en wij nemen contact met u op!</p>
+                            </div>
+
+                            <form class="contact-form">
+                                <input class="contact-input" type="text" name="name" placeholder="Naam:">
+                                <input class="contact-input" type="text" name="adres" placeholder="Adres:">
+                            </form>
                         </div>
                     </div>
                     <img class="customer" src="assets/hendrik.jpg" alt="hendrik">
@@ -139,9 +182,9 @@ $conn->close();
                 </form>
             </div>
         </div>
-    </div>
+        </main>
 
-    <?php include "footer.php" ?>
+        <?php include "footer.php" ?>
 
 </body>
 
@@ -184,10 +227,7 @@ $conn->close();
     const images = <?php echo json_encode($images); ?>;
     const imageCount = images.length;
 
-    function updateImage(index){
+    function updateImage(index) {
         document
     }
-
-
-
 </script>
