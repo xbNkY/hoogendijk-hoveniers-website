@@ -31,7 +31,7 @@
       ?>
             <tr>
               <td><?= $id ?></td>
-              <td><p><?= $photo; ?></p></td>
+              <td><p><img src="<?= $photo; ?>" style="height: 250px; width: auto;"></p></td>
               <td><a href='editingPicture.php?id=<?= $id ?>'>Edit</a></td>
               <td><a href='deletePicture.php?id=<?= $id ?>'>Delete</a></td>
             </tr>
