@@ -31,22 +31,10 @@ body {
   margin-left: auto;
 }
 
-/* J: Heel goed gedaan voor je eerste keer responsiveness! De content en hoe je het hebt gedaan is perfect! 
-Het enige wat ik kan opmerken is dat je misschien beter rekening zou kunnen houden met nog kleineren schermen,
-en op de details letten van de responsiveness. Ik weet zelf niet hoe je gecheckt hebt voor responsiveness natuurlijk,
-maar let op de hele kleine details enz. Verder vindt ik het echt heel goed gedaan!! :) 
-Verder staan er ook nog speciefike comments voor stukken die ik heb verbeterd, dus daar kan je naar kijken als je specifieke dingetje wilt weten!! */
-
 /* grotere schermen voor pc */
-
-/* J: Bij het doen van min-width, sluit je de pixels tussen 1280 en 1024 uit van enige repsosiveness die je hebt gemaakt! 
-Gebruik daarom hier beide min en max width, waardoor de ruimte tussen de volgende responsiveness met de max width ook word
-gecoverd door de @media!! :D*/
-@media screen and (min-width: 1280px), (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .container {
-    /* J: Gebruik van px zorgt meestal voor problemen! Probeer altijd % te gebruiken als je met de lengtes enzo doet!
-    Als je namenlijk met px werkt wordt het afhankelijk van die speciefiek aangegeven proportie, terwijl bij % dat niet zo is! :) */
-    width: 90%;
+    width: 1280px;
   }
 
   .top-info-container {
@@ -102,9 +90,7 @@ gecoverd door de @media!! :D*/
   }
 }
 
-/* J: Een beetje grotere limiet gemaakt! Merkte dat de text bij de titel een beetje erg dichtbij stonden 
-(is echt gwn dat ik er naar kijk, verder is dit gwn goed!!) */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .container-header-content {
     flex-direction: column;
     gap: 10px;
@@ -205,12 +191,5 @@ gecoverd door de @media!! :D*/
 
   .bekijk-dienst {
     font-size: 14px;
-  }
-}
-
-/* J: Veel schermen zijn ook nog veel kleiner dan 800, en dan heb je natuurlijk meer responsiveness nodig, hou er rekening mee!! :) */
-@media screen and (max-width: 575px){
-  .container{
-    width: 70%;
   }
 }
