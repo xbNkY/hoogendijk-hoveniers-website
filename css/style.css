@@ -44,6 +44,15 @@ body {
   }
 }
 
+/* J: Bij het doen van min-width, sluit je de pixels tussen 1280 en 1024 uit van enige repsosiveness die je hebt gemaakt! 
+Gebruik daarom hier beide min en max width, waardoor de ruimte tussen de volgende responsiveness met de max width ook word
+gecoverd door de @media!! :D*/
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 85%;
+  }
+}
+
 /* schermen zoals ipad */
 @media screen and (max-width: 1024px) {
   .logo {
@@ -193,3 +202,6 @@ body {
     font-size: 14px;
   }
 }
+
+/* J: Veel schermen zijn ook nog veel kleiner dan 800, en dan heb je natuurlijk meer responsiveness nodig, hou er rekening mee!! :) 
+Ik heb deze even gefixed!! Mijn fix was niet nodig, maar ik weet nu niet of het werkt voor schermen kleiner dan 375px*/
