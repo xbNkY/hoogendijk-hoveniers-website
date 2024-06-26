@@ -15,14 +15,10 @@
         <div class="container container-footer-content">
             <div class="over-ons info-text">
                 <p class="big-text">Over ons</p>
-                <ul>
-                    <a class="small-text" href="dienstenaanbod.php">
-                        <li>Dienstenaanbod</li>
-                    </a>
-                    <a class="small-text" href="portfolio.php">
-                        <li>Portfolio</li>
-                    </a>
-                </ul>
+                <div class="over-ons-text">
+                    <a class="small-text" href="dienstenaanbod.php">Dienstenaanbod</a>
+                    <a class="small-text" href="portfolio.php">Portfolio</a>
+                </div>
             </div>
 
             <div class="adres info-text">

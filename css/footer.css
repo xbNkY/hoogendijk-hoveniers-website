@@ -78,3 +78,8 @@
   text-decoration: underline;
   color: inherit;
 }
+
+.over-ons-text {
+  display: flex;
+  flex-direction: column;
+}
