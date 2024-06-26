@@ -170,7 +170,8 @@ main {
   }
 
   .contact-full {
-    margin-inline: 10px;
+    margin-inline: 20px;
+    width: fit-content;
   }
 
   .info-text-white {
@@ -199,7 +200,13 @@ main {
   .bekijk-dienst {
     font-size: 14px;
   }
-}
 
-/* J: Veel schermen zijn ook nog veel kleiner dan 800, en dan heb je natuurlijk meer responsiveness nodig, hou er rekening mee!! :) 
-Ik heb deze even gefixed!! Mijn fix was niet nodig, maar ik weet nu niet of het werkt voor schermen kleiner dan 375px*/
+  .mySlides img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .arrow-review {
+    width: 20px;
+  }
+}
