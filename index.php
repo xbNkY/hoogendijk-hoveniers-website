@@ -16,35 +16,7 @@ if ($result->num_rows > 0) {
 }
 
 $recensieCount = count($recensies);
-
-$sql = "SELECT * FROM portfolio";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    $portfolio = array();
-    while ($row = $result->fetch_assoc()) {
-        $portfolio[] = $row;
-    }
-} else {
-    echo "No portfolio found";
-}
-
-
-$sql = "SELECT photo FROM portfolio";
-$result = $conn->query($sql);
-
-$images = [];
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()){
-    $images[] = $row['photo'];
-    }
-} else {
-    echo "0 results";
-}
-
 $conn->close();
-
-
 ?>
 
 
