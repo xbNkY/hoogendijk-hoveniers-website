@@ -28,16 +28,15 @@ if ($result->num_rows > 0) {
 } else {
     echo "No portfolio found";
 }
-$conn->close();
 
 
-$sql = "SELECT image_url FROM portfolio";
+$sql = "SELECT photo FROM portfolio";
 $result = $conn->query($sql);
 
 $images = [];
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
-    $images[] = $row['image_url'];
+    $images[] = $row['photo'];
     }
 } else {
     echo "0 results";
@@ -80,16 +79,48 @@ $conn->close();
                 <p class="info-text">Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.</p>
             </div>
 
-            <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
             <div class="slideshow">
-                <button onclick="prevImage()">
-                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-                </button>
-                    <img id="sliderImage" src="" alt="Image Slider">
-                <button onclick="nextImage()">
-                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
-                </button>
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\thumbnail_tuin2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\tuin3.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg" >
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="admin\portfolio\Images\a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
             </div>
+
+                
+        
+    </div>
+    </div>
         </div>
     </div>
 
@@ -100,7 +131,7 @@ $conn->close();
     <div class="review-and-contact container">
         <div class="reviews">
             <button onclick="prevRecensie()" style="border: 0px; background-color: transparent;">
-                <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                <img class="arrow-review" src="assets/arrow-left.svg" alt="arrow-left">
             </button>
 
             <div class="text-box">
@@ -113,7 +144,7 @@ $conn->close();
             </div>
 
             <button onclick="nextRecensie()" style="border: 0px; background-color: transparent;">
-                <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                <img class="arrow-review" src="assets/arrow-right.svg" alt="arrow-right">
             </button>
         </div>
 
@@ -180,14 +211,36 @@ $conn->close();
     //Om de 1e review te laten zien
     updateRecensie(currentRecensie);
 
-    let currentImage = 0;
-    const images = <?php echo json_encode($images); ?>;
-    const imageCount = images.length;
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    function updateImage(index){
-        document
+    function plusSlides(n){
+        showSlides(slideIndex += n);
     }
 
+    function currentSlide(n){
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n){
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length){
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++){
+            dots[i].className = dots[i].className.replace(" active","");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
 
 
 </script>
