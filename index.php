@@ -88,16 +88,11 @@ $conn->close();
                     <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
-
-                
-        
-    </div>
-    </div>
         </div>
     </div>
 
     <div style="display:flex;">
-        <img class="seperator-img" src="admin/portfolio/<?= $portfolio[10]['photo'] ?>" alt="seperator">
+        <img class="seperator-img" src="admin\portfolio\Images\thumbnail_tuin1.jpg" alt="seperator">
     </div>
 
     <div class="review-and-contact container">

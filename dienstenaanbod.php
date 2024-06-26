@@ -14,7 +14,6 @@
     <?php include "header.php" ?>
 
     <main class="full-aanbod">
-
         <div class="aanbod aanbod-one">
             <div class="container aanbod-grid">
                 <div class="text-section">
