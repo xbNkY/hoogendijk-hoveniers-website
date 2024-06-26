@@ -29,6 +29,23 @@ if ($result->num_rows > 0) {
     echo "No portfolio found";
 }
 $conn->close();
+
+
+$sql = "SELECT image_url FROM portfolio";
+$result = $conn->query($sql);
+
+$images = [];
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()){
+    $images[] = $row['image_url'];
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+
+
 ?>
 
 
@@ -39,6 +56,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Homepage</title>
 </head>
 
@@ -64,11 +82,13 @@ $conn->close();
 
             <!-- even temporary op deze manier zodat we wel zien hoe het wordt als het uiteindelijk werkt -->
             <div class="slideshow">
-                <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
-                <img class="slide-img" src="admin/portfolio/<?= $portfolio[0]['photo'] ?>" alt="slide1">
-                <img class="slide-img" src="admin/portfolio/<?= $portfolio[1]['photo'] ?>" alt="slide2">
-                <img class="slide-img" src="admin/portfolio/<?= $portfolio[2]['photo'] ?>" alt="slide3">
-                <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                <button onclick="prevImage()">
+                    <img class="arrow" src="assets/arrow-left.svg" alt="arrow-left">
+                </button>
+                    <img id="sliderImage" src="" alt="Image Slider">
+                <button onclick="nextImage()">
+                    <img class="arrow" src="assets/arrow-right.svg" alt="arrow-right">
+                </button>
             </div>
         </div>
     </div>
@@ -105,18 +125,16 @@ $conn->close();
                             <p class="head-text">Heeft u vragen?</p>
                             <p class="info-text">Vul dit formulier in en wij nemen contact met u op!</p>
                         </div>
-
-                        <form class="contact-form">
-                            <input class="contact-input" type="text" name="name" placeholder="Naam:">
-                            <input class="contact-input" type="text" name="adres" placeholder="Adres:">
-                        </form>
                     </div>
-
                     <img class="customer" src="assets/hendrik.jpg" alt="hendrik">
                 </div>
 
-                <form class="contact-form message-and-button">
-                    <textarea class="contact-input big-input" name="message" placeholder="Bericht:" rows="5"></textarea>
+                <form class="contact-form" method="post" action="send_email.php">
+                    <div class="info-name-adres">
+                        <input class="contact-input half-width" type="text" name="name" placeholder="Naam:" required>
+                        <input class="contact-input half-width" type="email" name="adres" placeholder="E-mailadres:" required>
+                    </div>
+                    <textarea class="contact-input big-input full-width" name="message" placeholder="Bericht:" rows="5" required></textarea>
                     <input type="submit" value="Versturen" class="send-btn">
                 </form>
             </div>
@@ -161,4 +179,15 @@ $conn->close();
 
     //Om de 1e review te laten zien
     updateRecensie(currentRecensie);
+
+    let currentImage = 0;
+    const images = <?php echo json_encode($images); ?>;
+    const imageCount = images.length;
+
+    function updateImage(index){
+        document
+    }
+
+
+
 </script>
