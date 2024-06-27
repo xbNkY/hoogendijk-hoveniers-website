@@ -54,27 +54,27 @@ $conn->close();
 
                 <div class="slideshow">
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp">
+                        <img src="admin\portfolio\images\a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\thumbnail_tuin2.jpg">
+                        <img src="admin\portfolio\images\thumbnail_tuin2.jpg">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\tuin3.jpg">
+                        <img src="admin\portfolio\images\tuin3.jpg">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg">
+                        <img src="admin\portfolio\images\a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp">
+                        <img src="admin\portfolio\images\a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="admin\portfolio\Images\a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp">
+                        <img src="admin\portfolio\images\a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -93,7 +93,7 @@ $conn->close();
         </div>
 
         <div style="display:flex;">
-            <img class="seperator-img" src="admin\portfolio\Images\thumbnail_tuin1.jpg" alt="seperator">
+            <img class="seperator-img" src="admin\portfolio\images\thumbnail_tuin1.jpg" alt="seperator">
         </div>
 
         <div class="review-and-contact container">

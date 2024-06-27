@@ -37,19 +37,19 @@ CREATE TABLE `portfolio` (
 --
 
 INSERT INTO `portfolio` (`id`, `photo`) VALUES
-(22, 'Images/a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp'),
-(23, 'Images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg'),
-(24, 'Images/a8db60_41e28b52fdc8461dbe9e00368c7cf8d4_mv2.jpeg'),
-(25, 'Images/a8db60_87f9493ee50244389acb45a8ed75afe4_mv2.webp'),
-(26, 'Images/a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg'),
-(27, 'Images/a8db60_89729f86eabe4bf3b65d2f554cfecd6d_mv2.webp'),
-(28, 'Images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
-(29, 'Images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
-(30, 'Images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
-(31, 'Images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg'),
-(32, 'Images/thumbnail_tuin1.jpg'),
-(33, 'Images/thumbnail_tuin2.jpg'),
-(34, 'Images/tuin3.jpg');
+(22, 'images/a8db60_0f63450d75f645bdab574047c56cf898_mv2.webp'),
+(23, 'images/a8db60_9f168361c12f4ad5800e1acf22f49080_mv2.jpeg'),
+(24, 'images/a8db60_41e28b52fdc8461dbe9e00368c7cf8d4_mv2.jpeg'),
+(25, 'images/a8db60_87f9493ee50244389acb45a8ed75afe4_mv2.webp'),
+(26, 'images/a8db60_379dcd1d20d04347b8fac28edbeb45c4_mv2.jpeg'),
+(27, 'images/a8db60_89729f86eabe4bf3b65d2f554cfecd6d_mv2.webp'),
+(28, 'images/a8db60_8430792b04494ef1985704c9dda7049d_mv2.webp'),
+(29, 'images/a8db60_b84128c7e416498ebd0c8972d3604240_mv2.jpeg'),
+(30, 'images/a8db60_e7ba32f754a8415588e6327b5647b8d6_mv2.webp'),
+(31, 'images/a8db60_fbe67e59c7c94339903b8a24155922f0_mv2.jpeg'),
+(32, 'images/thumbnail_tuin1.jpg'),
+(33, 'images/thumbnail_tuin2.jpg'),
+(34, 'images/tuin3.jpg');
 
 -- --------------------------------------------------------
 
