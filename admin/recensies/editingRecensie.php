@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         
                     if ($stmt->execute()) {
         
-                        $stmt->bind_result($id, $naam, $adres, $opmerking);
+                        $stmt->bind_result($id, $naam, $opmerking);
         
                         if ($stmt->fetch()) {
                 ?>            

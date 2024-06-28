@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $opmerking = $_POST['opmerking'];
 
             //sql command 
-            $sql = "UPDATE recensies SET naam = ? = ?, opmerking = ? WHERE id = ?";
+            $sql = "UPDATE recensies SET naam = ?, opmerking = ? WHERE id = ?";
             $updateqry = $conn->prepare($sql);
 
             //if there aint a update querry, show an error 
